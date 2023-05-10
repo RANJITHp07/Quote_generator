@@ -9,7 +9,7 @@ const app=express()
 dotenv.config()
 app.use(express.json())
 
-//session middleware
+// session middleware
 app.use(session({
     secret:process.env.SECRET_KEY,
     resave: false,
